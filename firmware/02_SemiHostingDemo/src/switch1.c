@@ -16,6 +16,7 @@
 struct SW1DATA_s {
     enum SW1_e switch1_last_state;
     volatile enum SW1_e switch1_interrupt_state;
+    uint32_t value;
 };
 
 static struct SW1DATA_s sw1Data;
@@ -42,6 +43,7 @@ void switch1(uintptr_t context) {
 
 void switch1_tasks() {
     enum SW1_e sw1_temp;
+    uint32_t* addr = (uint32_t*)0x30000000;
     
     debug_logging_switch1_tasks();
 
@@ -49,6 +51,7 @@ void switch1_tasks() {
     if(sw1_temp != sw1Data.switch1_last_state) {
         if(sw1_temp == SW1_ON) {
             messages_SW1_down();
+            sw1Data.value = *addr;
             mcp9804_read_temp();
         }
         if(sw1_temp == SW1_OFF) {
