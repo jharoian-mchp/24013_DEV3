@@ -59,28 +59,20 @@ void NVIC_Initialize( void )
 
     /* Enable the interrupt sources and configure the priorities as configured
      * from within the "Interrupt Manager" of MHC. */
-    NVIC_SetPriority(EIC_EXTINT_0_IRQn, 7);
-    NVIC_EnableIRQ(EIC_EXTINT_0_IRQn);
-    NVIC_SetPriority(EIC_EXTINT_1_IRQn, 7);
-    NVIC_EnableIRQ(EIC_EXTINT_1_IRQn);
-    NVIC_SetPriority(SERCOM6_0_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM6_0_IRQn);
-    NVIC_SetPriority(SERCOM6_1_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM6_1_IRQn);
-    NVIC_SetPriority(SERCOM6_2_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM6_2_IRQn);
-    NVIC_SetPriority(SERCOM6_OTHER_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM6_OTHER_IRQn);
-    NVIC_SetPriority(SERCOM7_0_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM7_0_IRQn);
-    NVIC_SetPriority(SERCOM7_1_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM7_1_IRQn);
-    NVIC_SetPriority(SERCOM7_2_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM7_2_IRQn);
-    NVIC_SetPriority(SERCOM7_OTHER_IRQn, 7);
-    NVIC_EnableIRQ(SERCOM7_OTHER_IRQn);
-    NVIC_SetPriority(TC0_IRQn, 7);
-    NVIC_EnableIRQ(TC0_IRQn);
+    NVIC_SetPriority(SERCOM4_6_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_6_IRQn);
+    NVIC_SetPriority(SERCOM4_5_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_5_IRQn);
+    NVIC_SetPriority(SERCOM4_0_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_0_IRQn);
+    NVIC_SetPriority(SERCOM4_1_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_1_IRQn);
+    NVIC_SetPriority(SERCOM4_2_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_2_IRQn);
+    NVIC_SetPriority(SERCOM4_3_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_3_IRQn);
+    NVIC_SetPriority(SERCOM4_4_IRQn, 7);
+    NVIC_EnableIRQ(SERCOM4_4_IRQn);
 
     /* Enable Usage fault */
     SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);
@@ -123,4 +115,27 @@ void NVIC_INT_Restore( bool state )
         __disable_irq();
         __DMB();
     }
+}
+
+bool NVIC_INT_SourceDisable( IRQn_Type source )
+{
+    bool processorStatus;
+    bool intSrcStatus;
+
+    processorStatus = NVIC_INT_Disable();
+    intSrcStatus = (NVIC_GetEnableIRQ(source) != 0U);
+    NVIC_DisableIRQ( source );
+    NVIC_INT_Restore( processorStatus );
+
+    /* return the source status */
+    return intSrcStatus;
+}
+
+void NVIC_INT_SourceRestore( IRQn_Type source, bool status )
+{
+    if( status ) {
+       NVIC_EnableIRQ( source );
+    }
+
+    return;
 }

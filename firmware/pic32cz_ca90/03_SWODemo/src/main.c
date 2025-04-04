@@ -16,43 +16,42 @@
     machines of all modules in the system
  *******************************************************************************/
 
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
+
 #include <stddef.h>                     // Defines NULL
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
 
-#include "heartbeat.h"
-#include "switch1.h"
-#include "switch2.h"
-#include "messages.h"
-#include "mcp9804.h"
-#include "debug_logging.h"
-#include "swo.h"
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Main Entry Point
+// *****************************************************************************
+// *****************************************************************************
 
 int main ( void )
 {
-    // Initialize all modules 
+    /* Initialize all modules */
     SYS_Initialize ( NULL );
-    
-    swo_init();
-    debug_logging_init();
-    messages_init();    
-    heartbeat_init();
-    switch1_init();
-    switch2_init();
-    mcp9804_init();
-    
+
     while ( true )
     {
-        // Maintain state machines of all polled MPLAB Harmony modules. 
+        /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
-        
-        heartbeat_tasks();
-        switch1_tasks();
-        //switch2_tasks();
     }
 
-    // Execution should not come here during normal operation 
+    /* Execution should not come here during normal operation */
+
     return ( EXIT_FAILURE );
 }
+
+
+/*******************************************************************************
+ End of File
+*/
 

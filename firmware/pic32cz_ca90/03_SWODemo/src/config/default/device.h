@@ -18,7 +18,7 @@
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -57,7 +57,7 @@
 #ifndef DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
     #define DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
 #endif //DONT_USE_PREDEFINED_PERIPHERALS_HANDLERS
-#include "pic32cx1025sg61128.h"
+#include "pic32cz2051ca90208.h"
 #pragma GCC diagnostic pop
 #include "device_cache.h"
 #include "toolchain_specifics.h"

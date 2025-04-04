@@ -14,7 +14,7 @@
 
 //DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -48,17 +48,11 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
-#include "peripheral/nvmctrl/plib_nvmctrl.h"
 #include "peripheral/evsys/plib_evsys.h"
-#include "peripheral/sercom/usart/plib_sercom7_usart.h"
-#include "peripheral/sercom/i2c_master/plib_sercom6_i2c_master.h"
 #include "peripheral/port/plib_port.h"
 #include "peripheral/clock/plib_clock.h"
 #include "peripheral/nvic/plib_nvic.h"
-#include "peripheral/systick/plib_systick.h"
-#include "peripheral/cmcc/plib_cmcc.h"
-#include "peripheral/eic/plib_eic.h"
-#include "peripheral/tc/plib_tc0.h"
+#include "peripheral/sercom/usart/plib_sercom4_usart.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -69,13 +63,13 @@ extern "C" {
 // DOM-IGNORE-END
 
 /* Device Information */
-#define DEVICE_NAME			 "PIC32CX1025SG61128"
-#define DEVICE_ARCH			 "CORTEX-M4"
-#define DEVICE_FAMILY		 "PIC32CX"
-#define DEVICE_SERIES		 "PIC32CXSG61"
+#define DEVICE_NAME          "PIC32CZ2051CA90208"
+#define DEVICE_ARCH          "CORTEX-M7"
+#define DEVICE_FAMILY        "PIC32C"
+#define DEVICE_SERIES        "PIC32CZCA90"
 
 /* CPU clock frequency */
-#define CPU_CLOCK_FREQUENCY 120000000
+#define CPU_CLOCK_FREQUENCY 300000000U
 
 // *****************************************************************************
 // *****************************************************************************

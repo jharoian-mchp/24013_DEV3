@@ -65,47 +65,13 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for SW1 pin ***/
-#define SW1_Get()               (((PORT_REGS->GROUP[3].PORT_IN >> 0U)) & 0x01U)
-#define SW1_PIN                  PORT_PIN_PD00
-
-/*** Macros for SW2 pin ***/
-#define SW2_Get()               (((PORT_REGS->GROUP[3].PORT_IN >> 1U)) & 0x01U)
-#define SW2_PIN                  PORT_PIN_PD01
-
-/*** Macros for SYS_SCL pin ***/
-#define SYS_SCL_Get()               (((PORT_REGS->GROUP[3].PORT_IN >> 8U)) & 0x01U)
-#define SYS_SCL_PIN                  PORT_PIN_PD08
-
-/*** Macros for SYS_SDA pin ***/
-#define SYS_SDA_Get()               (((PORT_REGS->GROUP[3].PORT_IN >> 9U)) & 0x01U)
-#define SYS_SDA_PIN                  PORT_PIN_PD09
-
 /*** Macros for mikroBus_TX pin ***/
-#define mikroBus_TX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 12U)) & 0x01U)
-#define mikroBus_TX_PIN                  PORT_PIN_PC12
+#define mikroBus_TX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 21U)) & 0x01U)
+#define mikroBus_TX_PIN                  PORT_PIN_PC21
 
 /*** Macros for mikroBus_RX pin ***/
-#define mikroBus_RX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 13U)) & 0x01U)
-#define mikroBus_RX_PIN                  PORT_PIN_PC13
-
-/*** Macros for LED2 pin ***/
-#define LED2_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 16U))
-#define LED2_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 16U))
-#define LED2_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 16U))
-#define LED2_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 16U))
-#define LED2_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 16U))
-#define LED2_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 16U)) & 0x01U)
-#define LED2_PIN                  PORT_PIN_PA16
-
-/*** Macros for LED1 pin ***/
-#define LED1_Set()               (PORT_REGS->GROUP[2].PORT_OUTSET = ((uint32_t)1U << 21U))
-#define LED1_Clear()             (PORT_REGS->GROUP[2].PORT_OUTCLR = ((uint32_t)1U << 21U))
-#define LED1_Toggle()            (PORT_REGS->GROUP[2].PORT_OUTTGL = ((uint32_t)1U << 21U))
-#define LED1_OutputEnable()      (PORT_REGS->GROUP[2].PORT_DIRSET = ((uint32_t)1U << 21U))
-#define LED1_InputEnable()       (PORT_REGS->GROUP[2].PORT_DIRCLR = ((uint32_t)1U << 21U))
-#define LED1_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 21U)) & 0x01U)
-#define LED1_PIN                  PORT_PIN_PC21
+#define mikroBus_RX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 22U)) & 0x01U)
+#define mikroBus_RX_PIN                  PORT_PIN_PC22
 
 // *****************************************************************************
 /* PORT Group
@@ -138,6 +104,15 @@
 
 /* Group 3 */
 #define PORT_GROUP_3 (PORT_BASE_ADDRESS + (3U * 0x80U))
+
+/* Group 4 */
+#define PORT_GROUP_4 (PORT_BASE_ADDRESS + (4U * 0x80U))
+
+/* Group 5 */
+#define PORT_GROUP_5 (PORT_BASE_ADDRESS + (5U * 0x80U))
+
+/* Group 6 */
+#define PORT_GROUP_6 (PORT_BASE_ADDRESS + (6U * 0x80U))
 
 
 /* Helper macros to get port information from the pin */
@@ -266,8 +241,17 @@ typedef enum
     /* PA25 pin */
     PORT_PIN_PA25 = 25U,
 
+    /* PA26 pin */
+    PORT_PIN_PA26 = 26U,
+
     /* PA27 pin */
     PORT_PIN_PA27 = 27U,
+
+    /* PA28 pin */
+    PORT_PIN_PA28 = 28U,
+
+    /* PA29 pin */
+    PORT_PIN_PA29 = 29U,
 
     /* PA30 pin */
     PORT_PIN_PA30 = 30U,
@@ -395,6 +379,12 @@ typedef enum
     /* PC07 pin */
     PORT_PIN_PC07 = 71U,
 
+    /* PC08 pin */
+    PORT_PIN_PC08 = 72U,
+
+    /* PC09 pin */
+    PORT_PIN_PC09 = 73U,
+
     /* PC10 pin */
     PORT_PIN_PC10 = 74U,
 
@@ -412,9 +402,6 @@ typedef enum
 
     /* PC15 pin */
     PORT_PIN_PC15 = 79U,
-
-    /* PC16 pin */
-    PORT_PIN_PC16 = 80U,
 
     /* PC17 pin */
     PORT_PIN_PC17 = 81U,
@@ -452,6 +439,9 @@ typedef enum
     /* PC28 pin */
     PORT_PIN_PC28 = 92U,
 
+    /* PC29 pin */
+    PORT_PIN_PC29 = 93U,
+
     /* PC30 pin */
     PORT_PIN_PC30 = 94U,
 
@@ -463,6 +453,24 @@ typedef enum
 
     /* PD01 pin */
     PORT_PIN_PD01 = 97U,
+
+    /* PD02 pin */
+    PORT_PIN_PD02 = 98U,
+
+    /* PD03 pin */
+    PORT_PIN_PD03 = 99U,
+
+    /* PD04 pin */
+    PORT_PIN_PD04 = 100U,
+
+    /* PD05 pin */
+    PORT_PIN_PD05 = 101U,
+
+    /* PD06 pin */
+    PORT_PIN_PD06 = 102U,
+
+    /* PD07 pin */
+    PORT_PIN_PD07 = 103U,
 
     /* PD08 pin */
     PORT_PIN_PD08 = 104U,
@@ -479,11 +487,152 @@ typedef enum
     /* PD12 pin */
     PORT_PIN_PD12 = 108U,
 
+    /* PD13 pin */
+    PORT_PIN_PD13 = 109U,
+
+    /* PD14 pin */
+    PORT_PIN_PD14 = 110U,
+
+    /* PD15 pin */
+    PORT_PIN_PD15 = 111U,
+
+    /* PD16 pin */
+    PORT_PIN_PD16 = 112U,
+
+    /* PD17 pin */
+    PORT_PIN_PD17 = 113U,
+
+    /* PD18 pin */
+    PORT_PIN_PD18 = 114U,
+
+    /* PD19 pin */
+    PORT_PIN_PD19 = 115U,
+
     /* PD20 pin */
     PORT_PIN_PD20 = 116U,
 
     /* PD21 pin */
     PORT_PIN_PD21 = 117U,
+
+    /* PD23 pin */
+    PORT_PIN_PD23 = 119U,
+
+    /* PD24 pin */
+    PORT_PIN_PD24 = 120U,
+
+    /* PD25 pin */
+    PORT_PIN_PD25 = 121U,
+
+    /* PD26 pin */
+    PORT_PIN_PD26 = 122U,
+
+    /* PD27 pin */
+    PORT_PIN_PD27 = 123U,
+
+    /* PD28 pin */
+    PORT_PIN_PD28 = 124U,
+
+    /* PD29 pin */
+    PORT_PIN_PD29 = 125U,
+
+    /* PE00 pin */
+    PORT_PIN_PE00 = 128U,
+
+    /* PE01 pin */
+    PORT_PIN_PE01 = 129U,
+
+    /* PE02 pin */
+    PORT_PIN_PE02 = 130U,
+
+    /* PE03 pin */
+    PORT_PIN_PE03 = 131U,
+
+    /* PE04 pin */
+    PORT_PIN_PE04 = 132U,
+
+    /* PE05 pin */
+    PORT_PIN_PE05 = 133U,
+
+    /* PE06 pin */
+    PORT_PIN_PE06 = 134U,
+
+    /* PE07 pin */
+    PORT_PIN_PE07 = 135U,
+
+    /* PE08 pin */
+    PORT_PIN_PE08 = 136U,
+
+    /* PE09 pin */
+    PORT_PIN_PE09 = 137U,
+
+    /* PE10 pin */
+    PORT_PIN_PE10 = 138U,
+
+    /* PE11 pin */
+    PORT_PIN_PE11 = 139U,
+
+    /* PF00 pin */
+    PORT_PIN_PF00 = 160U,
+
+    /* PF01 pin */
+    PORT_PIN_PF01 = 161U,
+
+    /* PF02 pin */
+    PORT_PIN_PF02 = 162U,
+
+    /* PF03 pin */
+    PORT_PIN_PF03 = 163U,
+
+    /* PF04 pin */
+    PORT_PIN_PF04 = 164U,
+
+    /* PF05 pin */
+    PORT_PIN_PF05 = 165U,
+
+    /* PF06 pin */
+    PORT_PIN_PF06 = 166U,
+
+    /* PF07 pin */
+    PORT_PIN_PF07 = 167U,
+
+    /* PF08 pin */
+    PORT_PIN_PF08 = 168U,
+
+    /* PG00 pin */
+    PORT_PIN_PG00 = 192U,
+
+    /* PG01 pin */
+    PORT_PIN_PG01 = 193U,
+
+    /* PG02 pin */
+    PORT_PIN_PG02 = 194U,
+
+    /* PG03 pin */
+    PORT_PIN_PG03 = 195U,
+
+    /* PG04 pin */
+    PORT_PIN_PG04 = 196U,
+
+    /* PG05 pin */
+    PORT_PIN_PG05 = 197U,
+
+    /* PG06 pin */
+    PORT_PIN_PG06 = 198U,
+
+    /* PG07 pin */
+    PORT_PIN_PG07 = 199U,
+
+    /* PG08 pin */
+    PORT_PIN_PG08 = 200U,
+
+    /* PG09 pin */
+    PORT_PIN_PG09 = 201U,
+
+    /* PG10 pin */
+    PORT_PIN_PG10 = 202U,
+
+    /* PG11 pin */
+    PORT_PIN_PG11 = 203U,
 
     /* This element should not be used in any of the PORT APIs.
      * It will be used by other modules or application to denote that none of

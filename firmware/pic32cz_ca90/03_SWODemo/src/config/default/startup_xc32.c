@@ -74,15 +74,17 @@ extern uint32_t _stack;
 
 extern int main(void);
 
-__STATIC_INLINE void __attribute__((optimize("-O1"))) CMCC_Configure(void)
+
+
+/** Enable TCM memory */
+__STATIC_INLINE void __attribute__((optimize("-O1"))) TCM_Enable(void)
 {
-    CMCC_REGS->CMCC_CTRL &= ~(CMCC_CTRL_CEN_Msk);
-    while((CMCC_REGS->CMCC_SR & CMCC_SR_CSTS_Msk) == CMCC_SR_CSTS_Msk)
-    {
-        /*Wait for the operation to complete*/
-    }
-    CMCC_REGS->CMCC_CFG = CMCC_CFG_CSIZESW(2U)| CMCC_CFG_DCDIS_Msk;
-    CMCC_REGS->CMCC_CTRL = (CMCC_CTRL_CEN_Msk);
+    __DSB();
+    __ISB();
+    SCB->ITCMCR = (SCB_ITCMCR_EN_Msk  | SCB_ITCMCR_RMW_Msk | SCB_ITCMCR_RETEN_Msk);
+    SCB->DTCMCR = (SCB_DTCMCR_EN_Msk | SCB_DTCMCR_RMW_Msk | SCB_DTCMCR_RETEN_Msk);
+    __DSB();
+    __ISB();
 }
 
 
@@ -145,8 +147,8 @@ void __attribute__((optimize("-O1"), section(".text.Reset_Handler"), long_call, 
     FPU_Enable();
 #endif
 
-    /* Configure CMCC */
-    CMCC_Configure();
+    /* Enable TCM   */
+    TCM_Enable();
 
     /* Initialize data after TCM is enabled.
      * Data initialization from the XC32 .dinit template */
@@ -161,6 +163,12 @@ void __attribute__((optimize("-O1"), section(".text.Reset_Handler"), long_call, 
 
     /* Initialize the C library */
     __libc_init_array();
+
+    /* Enable ICache (CMSIS-Core API) */
+    SCB_EnableICache();
+
+    /* Enable DCache (CMSIS-Core API)*/
+    SCB_EnableDCache();
 
     /* Call the optional application-provided _on_bootstrap() function. */
     _on_bootstrap();

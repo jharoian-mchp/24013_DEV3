@@ -43,7 +43,7 @@ extern "C" {
 #define NO_INIT        __attribute__((section(".no_init")))
 #define SECTION(a)     __attribute__((__section__(a)))
 
-#define CACHE_LINE_SIZE    (16u)
+#define CACHE_LINE_SIZE    (32u)
 #define CACHE_ALIGN        __ALIGNED(CACHE_LINE_SIZE)
 
 #define CACHE_ALIGNED_SIZE_GET(size)     ((size) + ((((size) % (CACHE_LINE_SIZE))!= 0U)? ((CACHE_LINE_SIZE) - ((size) % (CACHE_LINE_SIZE))) : (0U)))
