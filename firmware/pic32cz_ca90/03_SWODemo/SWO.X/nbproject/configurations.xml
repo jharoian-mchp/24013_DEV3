@@ -10,6 +10,9 @@
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clock/plib_clock.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="eic" displayName="eic" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/eic/plib_eic.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="evsys" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/default/peripheral/evsys/plib_evsys.h</itemPath>
             </logicalFolder>
@@ -204,6 +207,9 @@
           <logicalFolder name="peripheral" displayName="peripheral" projectFiles="true">
             <logicalFolder name="clock" displayName="clock" projectFiles="true">
               <itemPath>../src/config/default/peripheral/clock/plib_clock.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="eic" displayName="eic" projectFiles="true">
+              <itemPath>../src/config/default/peripheral/eic/plib_eic.c</itemPath>
             </logicalFolder>
             <logicalFolder name="evsys" displayName="evsys" projectFiles="true">
               <itemPath>../src/config/default/peripheral/evsys/plib_evsys.c</itemPath>

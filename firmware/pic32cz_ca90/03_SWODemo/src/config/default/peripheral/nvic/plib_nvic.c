@@ -59,6 +59,10 @@ void NVIC_Initialize( void )
 
     /* Enable the interrupt sources and configure the priorities as configured
      * from within the "Interrupt Manager" of MHC. */
+    NVIC_SetPriority(EIC_EXTINT_7_IRQn, 7);
+    NVIC_EnableIRQ(EIC_EXTINT_7_IRQn);
+    NVIC_SetPriority(EIC_EXTINT_8_IRQn, 7);
+    NVIC_EnableIRQ(EIC_EXTINT_8_IRQn);
     NVIC_SetPriority(SERCOM4_6_IRQn, 7);
     NVIC_EnableIRQ(SERCOM4_6_IRQn);
     NVIC_SetPriority(SERCOM4_5_IRQn, 7);
