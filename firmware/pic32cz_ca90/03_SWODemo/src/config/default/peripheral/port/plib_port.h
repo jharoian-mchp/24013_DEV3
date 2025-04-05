@@ -65,6 +65,10 @@
 // *****************************************************************************
 // *****************************************************************************
 
+/*** Macros for SW2 pin ***/
+#define SW2_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 23U)) & 0x01U)
+#define SW2_PIN                  PORT_PIN_PC23
+
 /*** Macros for mikroBus_TX pin ***/
 #define mikroBus_TX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 21U)) & 0x01U)
 #define mikroBus_TX_PIN                  PORT_PIN_PC21
@@ -72,6 +76,10 @@
 /*** Macros for mikroBus_RX pin ***/
 #define mikroBus_RX_Get()               (((PORT_REGS->GROUP[2].PORT_IN >> 22U)) & 0x01U)
 #define mikroBus_RX_PIN                  PORT_PIN_PC22
+
+/*** Macros for SW1 pin ***/
+#define SW1_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 24U)) & 0x01U)
+#define SW1_PIN                  PORT_PIN_PB24
 
 /*** Macros for LED1 pin ***/
 #define LED1_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = ((uint32_t)1U << 21U))

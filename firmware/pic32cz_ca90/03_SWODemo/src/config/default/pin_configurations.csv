@@ -90,7 +90,7 @@ M7,PB00,,Available,,,,,,No,FAST
 M11,PF07,,Available,,,,,,No,FAST
 M12,PF08,,Available,,,,,,No,FAST
 M13,PC08,,Available,,,,,,No,FAST
-M15,PC23,,Available,,,,,,No,FAST
+M15,PC23,SW2,EIC_EXTINT7,Digital,High Impedance,n/a,Yes,No,No,FAST
 M17,PC24,,Available,,,,,,No,FAST
 M18,PC09,,Available,,,,,,No,FAST
 N1,PA26,,Available,,,,,,No,FAST
@@ -136,7 +136,7 @@ U11,PB28,,Available,,,,,,No,FAST
 U12,PB09,,Available,,,,,,No,FAST
 U13,PB29,,Available,,,,,,No,FAST
 U14,PB30,,Available,,,,,,No,FAST
-U15,PB24,,Available,,,,,,No,FAST
+U15,PB24,SW1,EIC_EXTINT8,Digital,High Impedance,n/a,Yes,No,No,FAST
 U16,PB13,,Available,,,,,,No,FAST
 U17,PB15,,Available,,,,,,No,FAST
 U18,PB16,,Available,,,,,,No,FAST
