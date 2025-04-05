@@ -7,8 +7,8 @@
 
 #include "switch2.h"
 #include "messages.h"
-#include "peripheral/port/plib_port.h"
-//#include "peripheral/eic/plib_eic.h"
+#include "config/default/peripheral/port/plib_port.h"
+#include "config/default/peripheral/eic/plib_eic.h"
 #include "debug_logging.h"
 
 
@@ -25,8 +25,8 @@ void switch2_init() {
     sw2Data.switch2_last_state = SW2_OFF;
     sw2Data.switch2_interrupt_state = SW2_OFF;
 
-    EIC_CallbackRegister(EIC_PIN_1, switch2, (uintptr_t) NULL);
-    EIC_InterruptEnable(EIC_PIN_1);
+    EIC_CallbackRegister(EIC_PIN_7, switch2, (uintptr_t) NULL);
+    EIC_InterruptEnable(EIC_PIN_7);
 }
 
 void switch2(uintptr_t context) {

@@ -7,8 +7,8 @@
 
 #include "switch1.h"
 #include "messages.h"
-#include "peripheral/port/plib_port.h"
-//#include "peripheral/eic/plib_eic.h"
+#include "config/default/peripheral/port/plib_port.h"
+#include "config/default/peripheral/eic/plib_eic.h"
 #include "mcp9804.h"
 #include "debug_logging.h"
 
@@ -27,8 +27,8 @@ void switch1_init() {
     sw1Data.switch1_last_state = SW1_OFF;
     sw1Data.switch1_interrupt_state = SW1_OFF;
 
-//    EIC_CallbackRegister(EIC_PIN_0, switch1, (uintptr_t) NULL);
-//    EIC_InterruptEnable(EIC_PIN_0);
+    EIC_CallbackRegister(EIC_PIN_8, switch1, (uintptr_t) NULL);
+    EIC_InterruptEnable(EIC_PIN_8);
 }
 
 void switch1(uintptr_t context) {
@@ -43,7 +43,7 @@ void switch1(uintptr_t context) {
 
 void switch1_tasks() {
     enum SW1_e sw1_temp;
-    uint32_t* addr = (uint32_t*)0x30000000;
+//    uint32_t* addr = (uint32_t*)0x30000000;
     
     debug_logging_switch1_tasks();
 
@@ -51,8 +51,8 @@ void switch1_tasks() {
     if(sw1_temp != sw1Data.switch1_last_state) {
         if(sw1_temp == SW1_ON) {
             messages_SW1_down();
-            sw1Data.value = *addr;
-            mcp9804_read_temp();
+//            sw1Data.value = *addr;
+//            mcp9804_read_temp();
         }
         if(sw1_temp == SW1_OFF) {
             messages_SW1_up();

@@ -299,10 +299,6 @@
       </makeCustomizationType>
       <item path="../src/mcp9804.c" ex="true" overriding="false">
       </item>
-      <item path="../src/switch1.c" ex="true" overriding="false">
-      </item>
-      <item path="../src/switch2.c" ex="true" overriding="false">
-      </item>
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>

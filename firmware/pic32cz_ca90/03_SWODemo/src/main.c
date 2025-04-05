@@ -35,11 +35,11 @@ int main ( void )
     SYS_Initialize ( NULL );
     
  //   swo_init();
- //   debug_logging_init();
+    debug_logging_init();
     messages_init();    
     heartbeat_init();
- //   switch1_init();
- //   switch2_init();
+    switch1_init();
+    switch2_init();
  //   mcp9804_init();
     
     while ( true )
@@ -48,8 +48,8 @@ int main ( void )
         SYS_Tasks ( );
         
         heartbeat_tasks();
- //       switch1_tasks();
-        //switch2_tasks();
+        switch1_tasks();
+        switch2_tasks();
     }
 
     // Execution should not come here during normal operation 
