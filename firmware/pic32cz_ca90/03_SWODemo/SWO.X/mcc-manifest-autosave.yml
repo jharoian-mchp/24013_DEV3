@@ -2,11 +2,11 @@
 
 manifest_file_version: 1.0.0
 project: SWO
-creation_date: 2025-04-04T17:51:01.233-07:00[America/Los_Angeles]
+creation_date: 2025-04-04T18:15:12.291-07:00[America/Los_Angeles]
 operating_system: Linux
 mcc_mode: IDE
 mcc_mode_version: v6.25
-device_name: PIC32CZ2051CA90208
+device_name: PIC32CZ8110CA90208
 compiler: XC32 4.60
 mcc_version: 5.5.2
 mcc_core_version: 5.7.1

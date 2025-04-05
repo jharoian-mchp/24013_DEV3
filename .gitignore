@@ -27,3 +27,5 @@
 # Large Files
 *.exe
 *.zip
+/firmware/pic32cz_ca90/03_SWODemo/SWO.X/dist/
+/firmware/pic32cz_ca90/03_SWODemo/SWO.X/build/

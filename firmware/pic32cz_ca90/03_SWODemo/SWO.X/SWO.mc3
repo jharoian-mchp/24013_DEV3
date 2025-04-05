@@ -1,4 +1,4 @@
-<config configName="default" projectName="SWO" configVersion="1.1" device="PIC32CZ2051CA90208" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
+<config configName="default" projectName="SWO" configVersion="1.1" device="PIC32CZ8110CA90208" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.7.1">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -38,18 +38,18 @@
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="!@#harmonyUserData"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;UserData&gt;
   &lt;UserData dnOrder=&quot;0&quot;&gt;
-    &lt;GraphSettings canvasHeight=&quot;274&quot; canvasWidth=&quot;326&quot; dnOrder=&quot;0&quot;/&gt;
+    &lt;GraphSettings canvasHeight=&quot;364&quot; canvasWidth=&quot;125&quot; dnOrder=&quot;0&quot;/&gt;
     &lt;PowerProfiles dnOrder=&quot;1&quot;&gt;
       &lt;Profile dnOrder=&quot;0&quot; id=&quot;profile0&quot; name=&quot;Main&quot;/&gt;
     &lt;/PowerProfiles&gt;
     &lt;ComponentGraph dnOrder=&quot;2&quot; id=&quot;__ROOTVIEW&quot;&gt;
       &lt;ElementPositions dnOrder=&quot;0&quot;&gt;
-        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;cmsis&quot; x=&quot;0&quot; y=&quot;24&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;core&quot; x=&quot;0&quot; y=&quot;0&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;dfp&quot; x=&quot;0&quot; y=&quot;47&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;evsys&quot; x=&quot;0&quot; y=&quot;71&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;sercom4&quot; x=&quot;0&quot; y=&quot;113&quot;/&gt;
-        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcc0&quot; x=&quot;0&quot; y=&quot;229&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;0&quot; id=&quot;cmsis&quot; x=&quot;0&quot; y=&quot;25&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;1&quot; id=&quot;core&quot; x=&quot;0&quot; y=&quot;2&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;2&quot; id=&quot;dfp&quot; x=&quot;0&quot; y=&quot;49&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;3&quot; id=&quot;evsys&quot; x=&quot;0&quot; y=&quot;73&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;4&quot; id=&quot;sercom4&quot; x=&quot;0&quot; y=&quot;114&quot;/&gt;
+        &lt;ElementPosition dnOrder=&quot;5&quot; id=&quot;tcc0&quot; x=&quot;0&quot; y=&quot;227&quot;/&gt;
       &lt;/ElementPositions&gt;
     &lt;/ComponentGraph&gt;
   &lt;/UserData&gt;
@@ -83,28 +83,6 @@
 </value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="GCLK_ID_28_CHEN"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;GCLK_ID_28_CHEN&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="GCLK_ID_28_FREQ"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;GCLK_ID_28_FREQ&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="GCLK_ID_31_CHEN"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;GCLK_ID_31_CHEN&quot;&gt;
@@ -121,237 +99,6 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;GCLK_ID_31_FREQ&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;150000000&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_104_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_104_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_104_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_104_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_6_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_104_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_104_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_105_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_105_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_105_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_105_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_5_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_105_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_105_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_106_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_106_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_106_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_106_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_0_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_106_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_106_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_107_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_107_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_107_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_107_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_1_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_107_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_107_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_108_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_108_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_108_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_108_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_2_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_108_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_108_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_109_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_109_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_109_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_109_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_3_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_109_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_109_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_110_0_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_110_0_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_110_0_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_110_0_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;SERCOM7_4_Handler&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="NVIC_110_0_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;NVIC_110_0_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;false&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1044,7 +791,18 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_197_INEN&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;True&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_197_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_197_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;High&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1110,7 +868,18 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_199_INEN&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;User dnOrder=&quot;0&quot; value=&quot;True&quot;/&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PIN_199_LAT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PIN_199_LAT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;User dnOrder=&quot;0&quot; value=&quot;High&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1150,6 +919,17 @@
 </value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_GROUP_1_OUT"/>
+         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
+  &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_GROUP_1_OUT&quot;&gt;
+    &lt;Values dnOrder=&quot;0&quot;&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x600000&quot;/&gt;
+    &lt;/Values&gt;
+  &lt;/core&gt;
+&lt;/core&gt;
+</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="PORT_GROUP_1_PAD_21"/>
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_GROUP_1_PAD_21&quot;&gt;
@@ -1176,7 +956,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_GROUP_1_PINCFG21&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x2&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1187,7 +967,7 @@
          <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
   &lt;core dnOrder=&quot;0&quot; id=&quot;PORT_GROUP_1_PINCFG22&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x2&quot;/&gt;
+      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0x0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -1650,292 +1430,6 @@
   &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM4_CORE_CLOCK_FREQUENCY&quot;&gt;
     &lt;Values dnOrder=&quot;0&quot;&gt;
       &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;150000000&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_0_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_0_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_0_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_0_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_0_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_0_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_0_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_0_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_1_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_1_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_1_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_1_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_1_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_1_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_1_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_1_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_2_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_2_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_2_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_2_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_2_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_2_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_2_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_2_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_3_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_3_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_3_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_3_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_3_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_3_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_3_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_3_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_4_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_4_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_4_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_4_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_4_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_4_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_4_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_4_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_5_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_5_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_5_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_5_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_5_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_5_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_5_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_5_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_6_INTERRUPT_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_6_INTERRUPT_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_6_INTERRUPT_ENABLE_UPDATE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_6_INTERRUPT_ENABLE_UPDATE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;true&quot;/&gt;
-    &lt;/Values&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_6_INTERRUPT_HANDLER"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_6_INTERRUPT_HANDLER&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_6_INTERRUPT_HANDLER_LOCK"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_6_INTERRUPT_HANDLER_LOCK&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_CORE_CLOCK_ENABLE"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_CORE_CLOCK_ENABLE&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;/&gt;
-  &lt;/core&gt;
-&lt;/core&gt;
-</value>
-      </entry>
-      <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="core" name="SERCOM7_CORE_CLOCK_FREQUENCY"/>
-         <value>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;core&gt;
-  &lt;core dnOrder=&quot;0&quot; id=&quot;SERCOM7_CORE_CLOCK_FREQUENCY&quot;&gt;
-    &lt;Values dnOrder=&quot;0&quot;&gt;
-      &lt;Dynamic dnOrder=&quot;0&quot; id=&quot;core&quot; value=&quot;0&quot;/&gt;
     &lt;/Values&gt;
   &lt;/core&gt;
 &lt;/core&gt;
@@ -6900,16 +6394,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
-         <file>../src/config/default/PIC32CZ2051CA90208.ld</file>
-         <hash>5e139147b2ced5a4a1b77c4c65ec758a1c907c599e7558f64ab099c20a770ef3</hash>
+         <file>../src/config/default/PIC32CZ8110CA90208.ld</file>
+         <hash>188ba19d8da9dfc895bf22b4d46d9f87b8ff0cdda50f619a3021b36e144abe82</hash>
       </entry>
       <entry>
          <file>../src/config/default/definitions.h</file>
-         <hash>ba4f07004bd8248fcbbf18e9b68a04933cb4fafe820788a30bcc71f888100101</hash>
+         <hash>13eaa62ac2f86f6de0f4c8a2a8e676256a2e97a4767877a3269459481c5d5e76</hash>
       </entry>
       <entry>
          <file>../src/config/default/device.h</file>
-         <hash>43f064769197d97c240d311457a57873ecfdc2ad48cdae76bae1c9cb53aab356</hash>
+         <hash>dc53d76f68355827fd146558b23bffb156697207880ccc4cc8946bf55258fbc8</hash>
       </entry>
       <entry>
          <file>../src/config/default/device_cache.h</file>
@@ -6965,7 +6459,7 @@
       </entry>
       <entry>
          <file>../src/config/default/peripheral/port/plib_port.c</file>
-         <hash>f7afb005833c5a6f373a8d2739e2863af5beb5cb5dd7543966ce59a81c96015f</hash>
+         <hash>adca086ddfd08d9756ec8a4d1601aa7049a371786465dd2c4439c57c92b1c020</hash>
       </entry>
       <entry>
          <file>../src/config/default/peripheral/port/plib_port.h</file>
@@ -6997,7 +6491,7 @@
       </entry>
       <entry>
          <file>../src/config/default/pin_configurations.csv</file>
-         <hash>96ddc1790bf55a6d50119d1efcbb1d7ba3dc8a0d8fbefb5d2a96bc3f9adeba21</hash>
+         <hash>9f451578815aa2c57f8cb224dd69bd59495b5b3191d9c2230eabeaf5a129ae86</hash>
       </entry>
       <entry>
          <file>../src/config/default/startup_xc32.c</file>
@@ -7056,424 +6550,424 @@
          <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/ac.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/ac.h</file>
          <hash>f9aa4d2da1321b56a267dac7ebef1c7435ba674e79609da7c54d79212d9389ff</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/adc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/adc.h</file>
          <hash>0910ee5093b0a91b3e4ff6c22f0e6d2a99029ab8c595f6d641e66c9163e969f2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/can.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/can.h</file>
          <hash>2dcff859d53c232f1d1370069f35a6ac9372d5ce975c7d404b54de360559acbc</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/dma.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/dma.h</file>
          <hash>9400ae475632d875780e1d5196bb2df3bf8e1dfd7fc534db8f209590378a4d09</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/drmtcm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/drmtcm.h</file>
          <hash>bf62d48047322133f988d83ef575a87c126bb4e9ea016d94beef28a45a8ca575</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/dsu.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/dsu.h</file>
          <hash>4eaa1dc3e69478d28877b43a19000bfd97422e2bdf3741fc265fb97a5c9d164e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/ebi.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/ebi.h</file>
          <hash>c6cb0537643548ac269059f23b95f1c6127b070a6858f70d05bcf4d59f49303c</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/eic.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/eic.h</file>
          <hash>286eee7dcae2982a4bec794bba31e20a18e0a81b350eeca7ca7e93bec77bf22d</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/eth.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/eth.h</file>
          <hash>f5e2b266531f0e93ec442eaf0a9dc8764b3864a498eef0c3808a9ff255f30ba8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/evsys.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/evsys.h</file>
          <hash>9b533c45d89bda6726709260df05c7774875e9f8a99a7eaddcf63abcb2e7506c</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/fcr.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/fcr.h</file>
          <hash>ad85460043748e2b975da9f0bdca820dc1e6b3c71e3eeff963877173a0146010</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/fcw.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/fcw.h</file>
          <hash>432be2158a6135968a77e3dfc24131fd2efbf099ee3d2c15e9eb1e54da30bdd9</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/freqm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/freqm.h</file>
          <hash>998e481ea1b198e8b2bfb4c9044a5a3686d105e80c83d0b23c0f67ef9f988622</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/fuses.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/fuses.h</file>
          <hash>dbf05856544d5173c74416aa612c184b2c2b5a6cb2e586aa0e3f9a7cebb7bb58</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/gclk.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/gclk.h</file>
          <hash>d33e2c537321cfb44913cbb33c3c80ebc699abbb02040063103daf21ba6441f7</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/hsm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/hsm.h</file>
          <hash>f8227991b55da598bb224d8760f915749757f39461592a10106dfb255b18865d</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/mclk.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/mclk.h</file>
          <hash>e7af1d00a3b7e81a7c440e36514edeb3894f580bd1d43bb8f6c30152951b734e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/mcramc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/mcramc.h</file>
          <hash>f05085d7e612d735714cf31aec142a1e50ee5dd1b84e64806c453b0c1eb8bb9f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/mlb.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/mlb.h</file>
          <hash>a45180c0f7289c298cec198704dd7219053bb7187b814ef2875e416281456467</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/osc32kctrl.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/osc32kctrl.h</file>
          <hash>0b8b2dc73d536e2d3e3043a9be2778672c079bcfe21152c7e314c8fb9ad8ab80</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/oscctrl.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/oscctrl.h</file>
          <hash>4e34a97b9f2c9363bc463ededec9a3e38ed4095efc7a902a7a7426cb7818b394</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/pac.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/pac.h</file>
          <hash>6ac4fe43301734b60c4019a2b98bc299a595f716a56b57984c69de5c4995f8b8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/pm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/pm.h</file>
          <hash>12fd8f4bc43b80b0bb7dc5a0761c0369d166c57d4dc95e35e747e1619630f322</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/port.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/port.h</file>
          <hash>698f8124632732d1d98d7915bf9d97d6ca1d54a09b4378fc81ba720fc7ae3d72</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/prm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/prm.h</file>
          <hash>c6ab0c43f44b83e16ab67aca8b677d263f6f7303b33135fdda0bc7e3bd36df60</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/ptc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/ptc.h</file>
          <hash>5abe72224ce730aafb380a7919dcb7e9ba9a988710b5c4a753f506c4b6d3b4d2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/rstc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/rstc.h</file>
          <hash>18c1d3059fea31d52217908a348ad4eae22b73a481e524f11586e45e9c899dc5</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/rtc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/rtc.h</file>
          <hash>f8f56db4fbeafd5634d996d9d8764b6e9b18bba7244b9cf5fadcd98a4651ff30</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/sdmmc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/sdmmc.h</file>
          <hash>e297b396de80f3614c275b0a4985cc247a7b34db02d04567d0f07185a5931200</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/sercom.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/sercom.h</file>
          <hash>299f77b159f0616e994703b3f261a103795af6cce975ea777da0f2234026fa7d</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/spi_ixs.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/spi_ixs.h</file>
          <hash>ace8c81d4f021345545ab713bf3379fc7f21f77c8cd32b4b2d9354103e685280</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/sqi.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/sqi.h</file>
          <hash>067450c25615d2e0f04f746dda9aaa1b85d068229e0c10a1e4ca971684511fee</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/supc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/supc.h</file>
          <hash>d0ca5d12933cc504f438abad2ac07bf5edbbddf9421cd14ffd4790f04309ba67</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/tcc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/tcc.h</file>
          <hash>174619eba7f37738e9aa41e8a916295613df7190c5163d4f4c5e39494bb5541a</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/tram.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/tram.h</file>
          <hash>c04056bffd2ae1e968f61cef93425ad2b14cc791cc41f1f68274b1227ea656d2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/trng.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/trng.h</file>
          <hash>2127ff7664903e5062ad0087dacee8699c8c82ccd46f7237fc4a1dd0bb40afc8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/usbhs.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/usbhs.h</file>
          <hash>c42ebe4924ecf794a9c12758fcb87aae1d69c28d374644526254bb2a0fb60b7f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/component/wdt.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/component/wdt.h</file>
          <hash>912c401998e178fd2d9f830a7cab6601ad660769ee1b40c8107fab4c0313b7d8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/ac.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/ac.h</file>
          <hash>66fde8024cdedbc47779497359cc26004f41d7a2795c1bb477890d12d92879ab</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/adc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/adc.h</file>
          <hash>f8d57d1b2a5fcfa0540098b0b1676da0759669a53c79b8ed10cc2553f6c57613</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can0.h</file>
          <hash>64bc37afd03e81ddb25a86c1c2a8bfab78cfcd769cc85fb763aa976d6537c5e0</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can1.h</file>
          <hash>e33dea3f969026ad32ccde1ba3feb689c0506b66536584bf31f89c70559bda94</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can2.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can2.h</file>
          <hash>b10f657f2fa2359ca213076c1f92f7489d86026713a1d8d91392820f6dce31c1</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can3.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can3.h</file>
          <hash>1fa4fa835be9ef217884119d9ec68dcd66c360deeef41412d7fa181e9ae34acc</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can4.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can4.h</file>
          <hash>d456d6460b142946d045acd0f2084d08d16b8741c83395058857d3fe96f88223</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/can5.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/can5.h</file>
          <hash>c24504dc45efe417d564047d3ff5e5cff9326eb822e5c9eaeeb8103d2792c95c</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/dma.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/dma.h</file>
          <hash>fef9f9f7c8ff9a288da91c9e7809c32b6f29c581efdcb24d2f2a1910008149bf</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/drmtcm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/drmtcm.h</file>
          <hash>fce79125c8f66aca7abe4dd5681ad5371196e913a271731221d2f76bd9627b5f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/dsu.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/dsu.h</file>
          <hash>83981f272c425b1d7b6580bd314ea18281e6fa208029a5a7b2254546b05af672</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/ebi.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/ebi.h</file>
          <hash>16943b8bbd0706372b78ec73d1e78c795699508ae2ef85d209265cdfc140af3e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/eic.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/eic.h</file>
          <hash>5deafd54c369b802e3aaecb4d39be37c6e13226f316a2b97e3ddf507bef7054e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/eth.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/eth.h</file>
          <hash>0a77760373c281216a26d86807a4001caf2e0b9bb18e17b8c5e119e0c95bca4f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/evsys.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/evsys.h</file>
          <hash>41b05ad08f16de77f05e38cc77fa43a6e4dab98e785467c40e4eae365b4642a2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/fcr.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/fcr.h</file>
          <hash>fa382ac99234ff5af45c74ee7f76fef8f6bac45a9190573faa3565836ce6a004</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/fcw.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/fcw.h</file>
          <hash>faa912c4fdfbfde40409ed95295d4af5f4b4e49a468739b526118cd18fc46c2d</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/freqm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/freqm.h</file>
          <hash>3787766c984e0e7e16f25e7891a44882e7a86001e321a4a1fcc2df986eabac4f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/fuses.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/fuses.h</file>
          <hash>90a25d0f4aa5e5084ccdedb315bedf7f33dfb848e0677a74ad4d6b1db17a553c</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/gclk.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/gclk.h</file>
          <hash>8b0916e5d893a217f30fe4a179a28a904aa506d2a3cd1e232a8f3b8407534c24</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/hsm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/hsm.h</file>
          <hash>46803f4f7c888dba838a966fe3d0409722fe42377bf7bafb501bb516048158ba</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/mclk.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/mclk.h</file>
          <hash>93ee0e3d61e8547ee9b339dae1fab7a760c9c3cf3c01dbea32b11bd5a8834358</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/mcramc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/mcramc.h</file>
          <hash>3e53196e6d986b90bf9317ad810a6b2386f9c53b9cf5050b49786a10922f9cc8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/mlb.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/mlb.h</file>
          <hash>affd8588742f55802eff18db2b70a7d472d973acffceadebea6840cfceccb736</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/osc32kctrl.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/osc32kctrl.h</file>
          <hash>617e3bade5d66b96295ca5a29fda058aebf090e7a75236b8813089e3f43b1dce</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/oscctrl.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/oscctrl.h</file>
          <hash>cc0022dfe298be7b569b85a22a47e9a6ee2926ca689b8fa4a40d2374c197d415</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/pac.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/pac.h</file>
          <hash>adf213d419c10238b608d1a43feb71ef787dd00ad66ef723e5816b08bb8368b0</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/pm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/pm.h</file>
          <hash>b8ba084ffc81976ca3117413b29ecfa0093751efc1ea5e53c7ee748dfc77735e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/port.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/port.h</file>
          <hash>c2685d4b162508d29b8f487d4fd315eaec4e00dafa9410011b3f881a04692ec0</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/prm.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/prm.h</file>
          <hash>4bed81df4d82ab28f340253183d366ee8dc8428df06ac718525c4f09c9c3bff7</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/ptc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/ptc.h</file>
          <hash>6ec18b5ebe4d7df70dda66c523c24e082faeb3f265db2a4f45ce64835b7c872b</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/rstc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/rstc.h</file>
          <hash>b247e20133dc8071dd0cf2f2af883fddb3d9421a1bc37405f40030887883f489</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/rtc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/rtc.h</file>
          <hash>03e7c108b2aeda1fd939deeecdd80596de7bcbe0c0a3bb35be02d7edfb121d03</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sdmmc0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sdmmc0.h</file>
          <hash>e761db97fd454be4f6853e4ee777c5ae21f72637a40752c30e205cae679c087b</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sdmmc1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sdmmc1.h</file>
          <hash>0dc15b26ea06d91e5193c92781b5e919ef719caf68222174672e6f0f0278ef73</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom0.h</file>
          <hash>66124f745457cd32340a6831e7a52db9635fb8e75c1ae9afa617271fe6ac7e6c</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom1.h</file>
          <hash>6362d088baa62d1f681b5d87e38dbd1af5f59c2a20b91dfab7a249a96c4e5403</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom2.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom2.h</file>
          <hash>8781a3f41b04ee50f6746efdb52a98fc2664660c113b8e467477000d471a1041</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom3.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom3.h</file>
          <hash>86e426ae7d74e77a0383a1c4af7c50a38f3019991d9f9e2a99316e2c9a76a347</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom4.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom4.h</file>
          <hash>5e8c5d3d65d438525b0ef299962432889cfcc97bda70228355c3a895523b1c26</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom5.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom5.h</file>
          <hash>322fdc65fb2c7c87186ffa6fb1279e783d6ddca5a4402ead89f3db7e6f02cf35</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom6.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom6.h</file>
          <hash>b176640a198ddfe815850d64502a4cd903afd761b2df98a4bf0b589ed5294bc0</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom7.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom7.h</file>
          <hash>1a5e4424264a97a44204154fa07c4bb0d880fbe12438203459bf70661f363e07</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom8.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom8.h</file>
          <hash>3db4fab124cafd3304402c5b416cc64630d1513a97ea3e71e08776d6dac377c1</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sercom9.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sercom9.h</file>
          <hash>2f8ab30e2ef3c9542ae880e7f598e2dc5be76fbb32d2f5902fbe49a0b776a13f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/spi_ixs0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/spi_ixs0.h</file>
          <hash>af4cfdd9f55a2c9fe6a1e865d35cc5a87a02dbed4c1df5795dcd99d0d21b59cc</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/spi_ixs1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/spi_ixs1.h</file>
          <hash>1cc5d403704eca22102a57c8eb4f5e684952ca852aff98e9d8743462324cdea8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sqi0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sqi0.h</file>
          <hash>8a4fa0c469ff26649d96cc80f0adc307791ef0b669eccdb3d3456061566540a4</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/sqi1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/sqi1.h</file>
          <hash>27d056f148595f6364bc1931594db150a04a12abb7c74d2de8eed7d7900a1059</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/supc.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/supc.h</file>
          <hash>4ec49573eaef620d979b6fd511ed406e649d5a102047f11e39005f891439e9fe</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc0.h</file>
          <hash>60e604c62b15a20ebdf9ed24f82c4cd1f6a5ff7f954b6bdb63ccf3c97dd15fe2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc1.h</file>
          <hash>46287c76b9990b5e7ca83b387a2f6c1b21056a2b203e5a684e067614d82d47b0</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc2.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc2.h</file>
          <hash>60e94e23cc2d04b87e2e12b85e119e86bcdd44291aba05f98dd5e31348db158a</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc3.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc3.h</file>
          <hash>15551f97642b3837e513c9f551b24ce416480c8be0abb87cb65f33ae769be51e</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc4.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc4.h</file>
          <hash>204d19737f292506ec265a828e6843decf3ebc39230eea89ba9a2e5e10fcc17f</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc5.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc5.h</file>
          <hash>b15cdb5b093f5fd5e581a208e0bbe026a06f015e36e13a2de775cbbbfd613ab2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc6.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc6.h</file>
          <hash>018f8d6383f7bd9c87ceb18edcffd6a365eea726132df0ae181b551706b1f51b</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc7.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc7.h</file>
          <hash>dafcb9d9733afe3178d4a0213222d3c9021edbef56a19248a1a2d5168db78ce8</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc8.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc8.h</file>
          <hash>5a4e22c749319bf95a4e62221c2e3ac90e73c3f8ff974b657d5cadef9efb80b3</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tcc9.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tcc9.h</file>
          <hash>69fa2c8895f96fb3133497aef435872931a68561b04f94d37e06625ee4da6cfe</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/tram.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/tram.h</file>
          <hash>fed8922d573562420f680f56cf93f5bbd7ce91f01bf7248ec7c4eb3611aee9e2</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/trng.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/trng.h</file>
          <hash>0f57fc1597c70884a8bbaa36440b7806493d13921aa78f22430667e216dba380</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/usbhs0.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/usbhs0.h</file>
          <hash>73a04c65c03e23a9fbbf5fd569f8e9ec4795f7ad04ca5892742ae2616690ab81</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/usbhs1.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/usbhs1.h</file>
          <hash>28852ebf1b27da2b908f7033d15a3e5650e6f953de2b79807750b2e833fa74a7</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/instance/wdt.h</file>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/instance/wdt.h</file>
          <hash>02968caf08649db5ade01369a99fccd2d022f281093113159852b75a2ee25ad5</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/pic32cz2051ca90208.h</file>
-         <hash>9557bbec3e947bba47230aa9bd0c50d7a509dfcf48ee99f120e860e1dbb58f2e</hash>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/pic32cz8110ca90208.h</file>
+         <hash>fa5960839df718fe385230ff95b48a56bf1f41e9ab189c1ca5dff9cae7795856</hash>
       </entry>
       <entry>
-         <file>../src/packs/PIC32CZ2051CA90208_DFP/pio/pic32cz2051ca90208.h</file>
-         <hash>7c60b46cb8c902344e4a0c7c876be853cb8fbba3c1a5f5b918b62befb851b281</hash>
+         <file>../src/packs/PIC32CZ8110CA90208_DFP/pio/pic32cz8110ca90208.h</file>
+         <hash>2a30b0ed511d08c2ca3414dc088745c7ae7bd40db723b2f505118c821ff9c36e</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

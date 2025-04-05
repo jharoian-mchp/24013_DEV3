@@ -37,7 +37,7 @@ int main ( void )
  //   swo_init();
  //   debug_logging_init();
     messages_init();    
- //   heartbeat_init();
+    heartbeat_init();
  //   switch1_init();
  //   switch2_init();
  //   mcp9804_init();
@@ -47,7 +47,7 @@ int main ( void )
         // Maintain state machines of all polled MPLAB Harmony modules. 
         SYS_Tasks ( );
         
- //       heartbeat_tasks();
+        heartbeat_tasks();
  //       switch1_tasks();
         //switch2_tasks();
     }

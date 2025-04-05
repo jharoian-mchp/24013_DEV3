@@ -144,9 +144,9 @@ V2,PB18,,Available,,,,,,No,FAST
 V3,PA17,,Available,,,,,,No,FAST
 V4,PB20,,Available,,,,,,No,FAST
 V5,PB05,,Available,,,,,,No,FAST
-V6,PB21,LED1,GPIO,Digital,In/Out,Low,,,No,FAST
+V6,PB21,LED1,GPIO,Digital,Out,High,,,No,FAST
 V7,PB06,,Available,,,,,,No,FAST
-V8,PB22,LED2,GPIO,Digital,In/Out,Low,,,No,FAST
+V8,PB22,LED2,GPIO,Digital,Out,High,,,No,FAST
 V9,PB07,,Available,,,,,,No,FAST
 V10,PB27,,Available,,,,,,No,FAST
 V11,PF03,,Available,,,,,,No,FAST
