@@ -7,8 +7,8 @@
 
 #include "heartbeat.h"
 #include "messages.h"
-#include "peripheral/port/plib_port.h"
-//#include "peripheral/tc/plib_tc0.h"
+#include "config/default/peripheral/port/plib_port.h"
+#include "config/default/peripheral/tcc/plib_tcc0.h"
 #include "debug_logging.h"
 
 
@@ -19,17 +19,17 @@ struct HBDATA_s {
 
 static struct HBDATA_s hbData;
 
-void heartbeat(TC_TIMER_STATUS status, uintptr_t context);
+void heartbeat(uint32_t status, uintptr_t context);
 
 void heartbeat_init() {
     hbData.heartbeat_last_state = HB_OFF;
     hbData.heartbeat_interrupt_state = HB_OFF;
 
-    TC0_TimerCallbackRegister( heartbeat, (uintptr_t) NULL );
-    TC0_TimerStart();
+    TCC0_TimerCallbackRegister( heartbeat, (uintptr_t) NULL );
+    TCC0_TimerStart();
 }
 
-void heartbeat(TC_TIMER_STATUS status, uintptr_t context) {
+void heartbeat(uint32_t status, uintptr_t context) {
     if(hbData.heartbeat_interrupt_state == HB_OFF) {
         hbData.heartbeat_interrupt_state = HB_ON;
     } else {

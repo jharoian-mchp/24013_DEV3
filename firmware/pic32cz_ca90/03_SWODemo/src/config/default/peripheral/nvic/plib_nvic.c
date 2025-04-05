@@ -73,6 +73,8 @@ void NVIC_Initialize( void )
     NVIC_EnableIRQ(SERCOM4_3_IRQn);
     NVIC_SetPriority(SERCOM4_4_IRQn, 7);
     NVIC_EnableIRQ(SERCOM4_4_IRQn);
+    NVIC_SetPriority(TCC0_OTHER_IRQn, 7);
+    NVIC_EnableIRQ(TCC0_OTHER_IRQn);
 
     /* Enable Usage fault */
     SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);

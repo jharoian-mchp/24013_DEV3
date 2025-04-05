@@ -1,22 +1,26 @@
 /*******************************************************************************
- System Interrupts File
+  Timer/Counter for Control(TCC) Peripheral Library Interface Header File
 
-  Company:
+  Company
     Microchip Technology Inc.
 
-  File Name:
-    interrupt.h
+  File Name
+    plib_tcc_common.h
 
-  Summary:
-    Interrupt vectors mapping
+  Summary
+    TCC peripheral library interface.
 
-  Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+  Description
+    This file defines the interface to the TCC peripheral library. This
+    library provides access to and control of the associated peripheral
+    instance.
+
+
+*******************************************************************************/
 
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2025 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -36,36 +40,68 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
+#ifndef PLIB_TCC_COMMON_H    // Guards against multiple inclusion
+#define PLIB_TCC_COMMON_H
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
+/*  This section lists the other files that are included in this file.
+*/
 
+#include <stdbool.h>
+#include <stddef.h>
 
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    extern "C" {
+
+#endif
+// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Handler Routines
+// Section: Data Types
 // *****************************************************************************
 // *****************************************************************************
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void MemoryManagement_Handler (void);
-void BusFault_Handler (void);
-void UsageFault_Handler (void);
-void DebugMonitor_Handler (void);
-void SERCOM4_USART_InterruptHandler (void);
-void TCC0_OTHER_InterruptHandler (void);
+/*  The following data type definitions are used by the functions in this
+    interface and should be considered part it.
+*/
+// *****************************************************************************
+
+typedef void (*TCC_CALLBACK)( uint32_t status, uintptr_t context );
+// *****************************************************************************
+
+typedef struct
+{
+    TCC_CALLBACK callback_fn;
+    uintptr_t context;
+}TCC_CALLBACK_OBJECT;
+
+typedef enum 
+{
+    TCC_COMMAND_NONE,
+    TCC_COMMAND_START_RETRIGGER,
+    TCC_COMMAND_STOP,
+    TCC_COMMAND_FORCE_UPDATE,
+    TCC_COMMAND_READ_SYNC
+}TCC_COMMAND;
 
 
 
-#endif // INTERRUPTS_H
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
+#endif
+// DOM-IGNORE-END
+
+#endif /* PLIB_TCC_COMMON_H */
