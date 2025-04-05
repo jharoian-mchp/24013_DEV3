@@ -169,6 +169,13 @@
           <itemPath>../src/packs/PIC32CZ2051CA90208_DFP/pic32cz2051ca90208.h</itemPath>
         </logicalFolder>
       </logicalFolder>
+      <itemPath>../src/debug_logging.h</itemPath>
+      <itemPath>../src/heartbeat.h</itemPath>
+      <itemPath>../src/mcp9804.h</itemPath>
+      <itemPath>../src/messages.h</itemPath>
+      <itemPath>../src/switch1.h</itemPath>
+      <itemPath>../src/switch2.h</itemPath>
+      <itemPath>../src/swo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -221,8 +228,18 @@
       </logicalFolder>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/config/default/pin_configurations.csv</itemPath>
+      <itemPath>../src/debug_logging.c</itemPath>
+      <itemPath>../src/heartbeat.c</itemPath>
+      <itemPath>../src/mcp9804.c</itemPath>
+      <itemPath>../src/messages.c</itemPath>
+      <itemPath>../src/switch1.c</itemPath>
+      <itemPath>../src/switch2.c</itemPath>
+      <itemPath>../src/swo.c</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>../src</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">
@@ -267,6 +284,18 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../src/debug_logging.c" ex="true" overriding="false">
+      </item>
+      <item path="../src/heartbeat.c" ex="true" overriding="false">
+      </item>
+      <item path="../src/mcp9804.c" ex="true" overriding="false">
+      </item>
+      <item path="../src/switch1.c" ex="true" overriding="false">
+      </item>
+      <item path="../src/switch2.c" ex="true" overriding="false">
+      </item>
+      <item path="../src/swo.c" ex="true" overriding="false">
+      </item>
       <C32>
         <property key="additional-warnings" value="true"/>
         <property key="addresss-attribute-use" value="false"/>
