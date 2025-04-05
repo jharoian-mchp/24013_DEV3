@@ -34,7 +34,7 @@ int main ( void )
     // Initialize all modules 
     SYS_Initialize ( NULL );
     
- //   swo_init();
+    swo_init();
     debug_logging_init();
     messages_init();    
     heartbeat_init();
