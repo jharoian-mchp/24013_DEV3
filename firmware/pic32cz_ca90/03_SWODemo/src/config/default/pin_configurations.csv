@@ -23,7 +23,7 @@ B10,PD02,,Available,,,,,,No,FAST
 B11,PD13,,Available,,,,,,No,FAST
 C1,PA02,,Available,,,,,,No,FAST
 C2,PA01,,Available,,,,,,No,FAST
-C17,PC19,,Available,,,,,,No,FAST
+C17,PC19,,BSDAP_TDO,Digital,High Impedance,n/a,No,No,No,FAST
 C18,PC18,,Available,,,,,,No,FAST
 D1,PA04,,Available,,,,,,No,FAST
 D2,PA03,,Available,,,,,,No,FAST

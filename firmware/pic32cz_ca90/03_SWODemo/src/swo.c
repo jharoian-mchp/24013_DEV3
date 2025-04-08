@@ -29,7 +29,11 @@ void ITM_SWO_Enable() {
     uint32_t StimulusRegs;
     uint32_t _ITMPort  = 0;     // The stimulus port from which SWO data is 
                                 // received and displayed.
-    uint32_t TargetDiv = 300;   // Has to be calculated according to
+    uint32_t CPUClock = 300000000; // CPU Clock in Hz
+    uint32_t SWOBaudRate = 60000;   // Baud Rate in Hz
+    uint32_t ITM_Clock_Prescale = (CPUClock / SWOBaudRate) - 1;   
+    
+    // Has to be calculated according to
                                 // the CPU speed and the output baud rate
                                 // 13 bit prescale.  CPU clock / targetDiv =
                                 // SWO data rate
@@ -37,8 +41,14 @@ void ITM_SWO_Enable() {
     // Trace Clock Setup 
     // GCLK_CM4_TRACE - PCHCTRL47
     // GCLK_CM7_TRACE - PCHCTRL63
-    GCLK_REGS->GCLK_PCHCTRL[63] = 0x40;
-  
+//    GCLK_REGS->GCLK_PCHCTRL[63] = 0x40;
+    GCLK_REGS->GCLK_PCHCTRL[63] = GCLK_PCHCTRL_GEN(0x0)  | GCLK_PCHCTRL_CHEN_Msk;
+
+    while ((GCLK_REGS->GCLK_PCHCTRL[63] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+    {
+        /* Wait for synchronization */
+    }
+
     // PIC32CX SG4/61 - SWO appears on PB30
     // Configure PB30 to Group H
 //    PORT_REGS->GROUP[1].PORT_PMUX[15] = 0x07;
@@ -48,7 +58,7 @@ void ITM_SWO_Enable() {
 
     // PIC32CZ CA90 - SWO appears on PC19
     // Set PINCFG19.PMUXEN to 1 so peripheral overrides the GPIO
-    PORT_REGS->GROUP[2].PORT_PINCFG[19] = 0x01;
+ //   PORT_REGS->GROUP[2].PORT_PINCFG[19] = 0x01;
 
     // Given PIN PC19, the PMUXm register is calculated as follows:
     // There are multiple GROUPS, or PORTS, based on the letter of the
@@ -61,14 +71,17 @@ void ITM_SWO_Enable() {
     
     // The value written to PORT_MUX.PMUXO is from Table 34-19.  In this case,
     // the value is 0x09 for SWO.
-    PORT_REGS->GROUP[2].PORT_PMUX[9] = (0x09 << 4);
+//    PORT_REGS->GROUP[2].PORT_PMUX[9] = (0x09 << 4);
 
+    PORT_PinPeripheralFunctionConfig(PORT_PIN_PC19, PERIPHERAL_FUNCTION_J);
+    
     //
     // Enable access to SWO registers
     //
+    
+    // Global Enable for all DWT and ITM features
     CoreDebug->DEMCR |= (1 << 24);
-    ITM->LAR = 0xC5ACCE55;
-  
+    
     //
     // Initially disable ITM and stimulus port
     // To make sure that nothing is transferred via SWO
@@ -79,13 +92,13 @@ void ITM_SWO_Enable() {
     StimulusRegs &= ~(1 << _ITMPort);
     ITM->TER = StimulusRegs;            // Disable ITM stimulus port
     ITM->TCR = 0;                       // Disable ITM
-  
+    
     //
     // Initialize SWO (prescaler, etc.)
     //
   
     TPI->SPPR = 0x00000002;             // Select NRZ mode
-    TPI->ACPR = TargetDiv - 1;          // Example: 300/300 = 1 MHz - 13 bit prescale
+    TPI->ACPR = ITM_Clock_Prescale;          // Example: 300/300 = 1 MHz - 13 bit prescale
     ITM->TPR = 0x00000000;
     DWT->CTRL = 0x400003FE;
     TPI->FFCR = 0x00000100;
