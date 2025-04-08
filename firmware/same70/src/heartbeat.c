@@ -40,7 +40,7 @@ void heartbeat(uint32_t status, uintptr_t context) {
 void heartbeat_tasks() {
     enum HB_e hb_temp;
     
-//    debug_logging_heartbeat_tasks();
+    debug_logging_heartbeat_tasks();
     
     hb_temp = hbData.heartbeat_interrupt_state;
     if(hb_temp != hbData.heartbeat_last_state) {

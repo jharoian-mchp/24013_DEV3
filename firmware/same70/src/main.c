@@ -27,15 +27,15 @@
 #include "messages.h"
 //#include "mcp9804.h"
 #include "debug_logging.h"
-//#include "swo.h"
+#include "swo.h"
 
 int main ( void )
 {
     // Initialize all modules 
     SYS_Initialize ( NULL );
     
- //   swo_init();
-//    debug_logging_init();
+    swo_init();
+    debug_logging_init();
     messages_init();    
     heartbeat_init();
     switch1_init();

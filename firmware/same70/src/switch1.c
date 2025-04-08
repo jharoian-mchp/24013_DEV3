@@ -44,7 +44,7 @@ void switch1_tasks() {
     enum SW1_e sw1_temp;
 //    uint32_t* addr = (uint32_t*)0x30000000;
     
-//    debug_logging_switch1_tasks();
+    debug_logging_switch1_tasks();
 
     sw1_temp = sw1Data.switch1_interrupt_state;
     if(sw1_temp != sw1Data.switch1_last_state) {

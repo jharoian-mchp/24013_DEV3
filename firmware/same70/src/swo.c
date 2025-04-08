@@ -12,8 +12,6 @@
 #include "swo.h"
 #include "definitions.h"
 
-#include "config/default/peripheral/port/plib_port.h"
-
 static void ITM_SWO_Enable();
 
 void swo_init() {
@@ -42,13 +40,14 @@ void ITM_SWO_Enable() {
     // Trace Clock Setup 
     // GCLK_CM4_TRACE - PCHCTRL47
     // GCLK_CM7_TRACE - PCHCTRL63
+    // Not needed for SAME70
 //    GCLK_REGS->GCLK_PCHCTRL[63] = 0x40;
-    GCLK_REGS->GCLK_PCHCTRL[63] = GCLK_PCHCTRL_GEN(0x0)  | GCLK_PCHCTRL_CHEN_Msk;
+//    GCLK_REGS->GCLK_PCHCTRL[63] = GCLK_PCHCTRL_GEN(0x0)  | GCLK_PCHCTRL_CHEN_Msk;
 
-    while ((GCLK_REGS->GCLK_PCHCTRL[63] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
-    {
-        /* Wait for synchronization */
-    }
+//    while ((GCLK_REGS->GCLK_PCHCTRL[63] & GCLK_PCHCTRL_CHEN_Msk) != GCLK_PCHCTRL_CHEN_Msk)
+//    {
+//        /* Wait for synchronization */
+//    }
 
     // PIC32CX SG4/61 - SWO appears on PB30
     // Configure PB30 to Group H
@@ -58,23 +57,11 @@ void ITM_SWO_Enable() {
 //    PORT_REGS->GROUP[1].PORT_PINCFG[30] = 0x41;
 
     // PIC32CZ CA90 - SWO appears on PC19
-    // Set PINCFG19.PMUXEN to 1 so peripheral overrides the GPIO
- //   PORT_REGS->GROUP[2].PORT_PINCFG[19] = 0x01;
+//    PORT_PinPeripheralFunctionConfig(PORT_PIN_PC19, PERIPHERAL_FUNCTION_J);
 
-    // Given PIN PC19, the PMUXm register is calculated as follows:
-    // There are multiple GROUPS, or PORTS, based on the letter of the
-    // pin designation.  A = 0, B = 1, C = 2, etc.
-    // In this example, GROUP = 2 due to the pin belonging to PORT C.
-    //
-    // Each register contains even and odd, so the register number, m,
-    // is calculated by int(n/2).  In this case, int(19/2) = int(9.5) = 9.
-    // 19 is an odd number.
-    
-    // The value written to PORT_MUX.PMUXO is from Table 34-19.  In this case,
-    // the value is 0x09 for SWO.
-//    PORT_REGS->GROUP[2].PORT_PMUX[9] = (0x09 << 4);
-
-    PORT_PinPeripheralFunctionConfig(PORT_PIN_PC19, PERIPHERAL_FUNCTION_J);
+    // ATSAME70 - SWO appears on PB5 - CCFG_SYSIO selects PIO or function
+    // SYSIO5 is SWO - 0 = SWO, 1 = PB5 function (PIO)
+    // No code needed to select pin
     
     //
     // Enable access to SWO registers
@@ -82,6 +69,7 @@ void ITM_SWO_Enable() {
     
     // Global Enable for all DWT and ITM features
     CoreDebug->DEMCR |= (1 << 24);
+    ITM->LAR = 0xC5ACCE55;
     
     //
     // Initially disable ITM and stimulus port
@@ -107,9 +95,11 @@ void ITM_SWO_Enable() {
     //
     // Enable ITM and stimulus port
     //
-    ITM->TCR = 0x1000D;                 // Enable ITM
+//    ITM->TCR = 0x1000D;                 // Enable ITM
+    ITM->TCR = 0x10015;                 // Enable ITM
     ITM->TER =  StimulusRegs | \
                 (1 << _ITMPort);        // Enable ITM stimulus port
+    ITM->TPR = 0x00000001;
 }
 
 //

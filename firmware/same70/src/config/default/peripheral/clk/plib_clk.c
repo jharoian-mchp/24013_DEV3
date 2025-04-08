@@ -90,16 +90,17 @@ Initialize Programmable Clock (PCKx)
 static void CLK_ProgrammableClockInitialize(void)
 {
     /* Disable selected programmable clock  */
-    PMC_REGS->PMC_SCDR = PMC_SCDR_PCK6_Msk;
+    PMC_REGS->PMC_SCDR = PMC_SCDR_PCK3_Msk | PMC_SCDR_PCK6_Msk;
 
     /* Configure selected programmable clock    */
+    PMC_REGS->PMC_PCK[3]= PMC_PCK_CSS_PLLA_CLK | PMC_PCK_PRES(1);
     PMC_REGS->PMC_PCK[6]= PMC_PCK_CSS_SLOW_CLK | PMC_PCK_PRES(0);
 
     /* Enable selected programmable clock   */
-    PMC_REGS->PMC_SCER =    PMC_SCER_PCK6_Msk;
+    PMC_REGS->PMC_SCER =    PMC_SCER_PCK3_Msk | PMC_SCER_PCK6_Msk;
 
     /* Wait for clock to be ready   */
-    while( (PMC_REGS->PMC_SR & (PMC_SR_PCKRDY6_Msk) ) != (PMC_SR_PCKRDY6_Msk))
+    while( (PMC_REGS->PMC_SR & (PMC_SR_PCKRDY3_Msk | PMC_SR_PCKRDY6_Msk) ) != (PMC_SR_PCKRDY3_Msk | PMC_SR_PCKRDY6_Msk))
     {
         /* Nothing to do */
     }
